@@ -1,8 +1,7 @@
-
 :root {
     font-family: monospace;
     font-size: calc(1ex + 1vw + 1vh);
-  }
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -12,7 +11,9 @@ body {
 .logo {
     text-transform: uppercase;
 }
-.logo > p, h1 {
+
+.logo>p,
+h1 {
     margin: 0;
 }
 
@@ -20,7 +21,7 @@ header {
     background-image: url(./images/1.jpeg);
     min-height: 100vh;
     background-repeat: no-repeat;
-    background-size:     cover;
+    background-size: cover;
     filter: grayscale(100%);
     background-position: center center;
 }
@@ -41,42 +42,46 @@ header div.wrapper {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    }
+}
+
 img {
     filter: grayscale(100);
 }
-    .two  {
-        display: flex;
+
+.two {
+    display: flex;
+}
+
+.two {
+    display: flex;
+    width: 100%;
+}
+
+.column-1 {
+    flex-shrink: 0;
+    /* shrinks to 0 to apply 70% width*/
+    flex-basis: 50%;
+    /* sets initial width to 70%*/
+    background-image: url(/images/2.jpeg);
+    filter: grayscale(100);
+}
+
+.column-2 {
+    color: white;
+    background-color: black;
+
+}
+
+.box {
+    padding: 30px;
+}
+
+@media only screen and (max-width: 900px) {
+    .two {
+        flex-direction: column;
     }
 
-.   .two {
-        display: flex;
-        width: 100%;
-      }
-      
-      .column-1 {
-        flex-shrink: 0; /* shrinks to 0 to apply 70% width*/
-        flex-basis: 50%; /* sets initial width to 70%*/
-        background-image: url(/images/2.jpeg);
-        filter: grayscale(100);
-      }
-
-      .column-2 {
-          color: white;
-          background-color: black;
-
-      }
-      .box {
-        padding: 30px;
-      }
-      
-      @media only screen and (max-width: 900px) {
-        .two {
-          flex-direction: column;
-        }
-      
-        .box {
-          margin: 0 0 1rem;
-        }
-      }
-      
+    .box {
+        margin: 0 0 1rem;
+    }
+}
