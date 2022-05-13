@@ -62,7 +62,7 @@ img {
     /* shrinks to 0 to apply 70% width*/
     flex-basis: 50%;
     /* sets initial width to 70%*/
-    background-image: url(/images/2.jpeg);
+    background-image: url(./images/2.jpeg);
     filter: grayscale(100);
 }
 
