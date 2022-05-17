@@ -28,7 +28,7 @@ header {
 }
 
 .cover {
-  background-image: url(/images/1.jpeg);
+  background-image: url(./images/1.jpeg);
   background-repeat: no-repeat;
   min-height: 100vh;
   background-size: cover;
@@ -72,7 +72,7 @@ display: block;
 
 
 .two {
-    background-image: url(/images/4.jpeg);
+    background-image: url(./images/4.jpeg);
     color: orangered;
 
 
@@ -90,7 +90,7 @@ display: block;
 }
 
 .four {
-  background-image: url(/images/3.jpeg);
+  background-image: url(./images/3.jpeg);
     color: blue;
   
 }
@@ -102,7 +102,7 @@ display: block;
 
 .six {
   color: blue;
-  background-image: url(/images/5.jpeg);
+  background-image: url(./images/5.jpeg);
 }
 
 address {
