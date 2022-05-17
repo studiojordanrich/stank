@@ -13,7 +13,8 @@ body {
 .logo {
   margin: 0;
   text-transform: uppercase;
-  text-decoration: underline dotted 3px;
+  text-decoration-line: underline;
+  text-decoration-style:dotted ;
   text-align: center;
 
 }
@@ -98,7 +99,7 @@ display: block;
 
 .six {
   color: blue;
-  background-image: url(/images/5.jpeg);
+  background-image: url(/images/8.jpeg);
 }
 
 address {
