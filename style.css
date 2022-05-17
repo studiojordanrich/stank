@@ -7,13 +7,18 @@ body {
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
   height: 100%;
+  background-color: fefefe;
+  color: orangered;
+}
+
+.home {
+  text-decoration-line: underline;
+  text-decoration-style:dotted ;
 }
 
 .logo {
   margin: 0;
   text-transform: uppercase;
-  text-decoration-line: underline;
-  text-decoration-style:dotted ;
   text-align: center;
 
 }
@@ -21,7 +26,7 @@ body {
 header {
   display: flex;
   justify-content: center;
-  color: red;
+  color: orangered;
   
 }
 
@@ -46,11 +51,12 @@ text-align-last: left;
 font-weight: 900;
 word-spacing: -6px;
 font-family: 'Courier New', Courier, monospace;
-
-
-
 }
 
+.img {
+  max-width: 100%;
+  height: auto;
+}
 p {
   display: block;
   margin: 23px;
@@ -60,6 +66,7 @@ p {
 img {
   max-width: 100%;
   height: auto;
+  filter: grayscale(100%);
 }
 
 .box {
