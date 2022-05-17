@@ -9,11 +9,14 @@ body {
   height: 100%;
 }
 
+.home {
+  text-decoration-line: underline;
+  text-decoration-style:dotted ;
+}
+
 .logo {
   margin: 0;
   text-transform: uppercase;
-  text-decoration-line: underline;
-  text-decoration-style:dotted ;
   text-align: center;
 
 }
