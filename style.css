@@ -1,87 +1,139 @@
+
 :root {
-    font-family: monospace;
-    font-size: calc(1ex + 1vw + 1vh);
+  font-size: calc(1ex + 1vw + 1vh);
 }
+
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  height: 100%;
 }
-
 
 .logo {
-    text-transform: uppercase;
+  margin: 0;
+  text-transform: uppercase;
+  text-decoration: underline dotted 3px;
+  text-align: center;
+
 }
 
-.logo>p,
-h1 {
-    margin: 0;
-}
+
 
 header {
-    background-image: url(./images/1.jpeg);
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: grayscale(100%);
-    background-position: center center;
+  display: flex;
+  justify-content: center;
+  color: red;
+
 }
 
-header div.wrapper {
-    background: rgba(0, 0, 0, 0.5);
-    height: 100vh;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: column nowrap;
-    flex-flow: column nowrap;
-    color: #fff;
-    padding: 1vh 30vw 1vh 10vw;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+.cover {
+  background-image: url(/images/1.jpeg);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  filter: grayscale(100%);
+  color: whitesmoke;
+  background-position: center center;
+  display: flex;
+  justify-content: baseline;
+  flex-direction: column;
+}
+
+article {
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(800px, 1fr));
+  grid-template-rows: auto;
+  text-align: justify;
+text-justify: distribute;
+text-align-last: left;
+font-weight: 900;
+
+}
+
+p {
+  display: block;
+  margin: 4em;
 }
 
 img {
-    filter: grayscale(100);
-}
-
-.two {
-    display: flex;
-}
-
-.two {
-    display: flex;
-    width: 100%;
-}
-
-.column-1 {
-    flex-shrink: 0;
-    /* shrinks to 0 to apply 70% width*/
-    flex-basis: 50%;
-    /* sets initial width to 70%*/
-    background-image: url(./images/2.jpeg);
-    filter: grayscale(100);
-}
-
-.column-2 {
-    color: white;
-    background-color: black;
-
+  max-width: 100%;
+  height: auto;
 }
 
 .box {
-    padding: 30px;
+background-size: cover;
+background-position: center center;
+min-height: 40vh;
+display: block;
+
 }
 
-@media only screen and (max-width: 900px) {
-    .two {
-        flex-direction: column;
-    }
 
-    .box {
-        margin: 0 0 1rem;
-    }
+.two {
+    background-image: url(/images/4.jpeg);
+    color: orangered;
+
+
 }
+
+.one {
+  color: orangered;
+}
+
+
+
+.three {
+  color: orangered;
+
+}
+
+.four {
+  background-image: url(/images/3.jpeg);
+    color: blue;
+  
+}
+
+.five {
+
+  color: blue;
+}
+
+.six {
+  color: blue;
+  background-image: url(/images/5.jpeg);
+}
+
+address {
+  margin: 0;
+}
+
+
+footer {
+  color: red;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  text-align: center;
+  margin-top: 9rem;
+  min-height: 90vh;
+}
+
+
+.info > p {
+  margin: 0;
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
